@@ -86,7 +86,7 @@ class App extends Component {
 
   onLinkSubmit = () => {
     this.setState({ imageurl: this.state.input });
-    fetch("http://localhost:3000/imageurl", {
+    fetch("https://smart-brain-08.herokuapp.com/imageurl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -96,7 +96,7 @@ class App extends Component {
       .then((resp) => resp.json())
       .then((response) => {
         if (response) {
-          fetch("http://localhost:3000/image", {
+          fetch("https://smart-brain-08.herokuapp.com/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
