@@ -16,6 +16,7 @@ import Register from "./components/Register/Register";
 //we have moved the clarifai api to backend so that no one can steal our api key from network tab
 //and use it for harmful purposes
 
+//deployed on https://smart-brain-front-08.herokuapp.com/
 const ParticleOpt = {
   particles: {
     number: {
